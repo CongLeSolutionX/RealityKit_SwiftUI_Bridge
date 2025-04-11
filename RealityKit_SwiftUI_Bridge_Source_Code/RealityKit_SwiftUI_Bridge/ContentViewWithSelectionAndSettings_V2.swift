@@ -141,13 +141,14 @@ struct ObjectSettingsView: View {
 
      // Returns a suitable shape for preview based on the object type.
     // ---- FIX 2: Change return type to `some Shape` ----
-    @ViewBuilder
+//    @ViewBuilder
     private func previewShape() -> some Shape {
         switch objectType {
         case .cube:
-            RoundedRectangle(cornerRadius: 5)
+            //RoundedRectangle(cornerRadius: 5)
+            Capsule()
         case .sphere:
-            Circle()
+            Capsule()
         case .capsule:
             Capsule()
         }
