@@ -11,7 +11,8 @@ import SwiftUI
 struct RealityKit_SwiftUI_BridgeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            ContentViewWithSelection()
         }
     }
 }
